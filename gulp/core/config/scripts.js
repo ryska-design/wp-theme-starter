@@ -114,7 +114,12 @@ module.exports = deepMerge({
 				plugins: [
 					new BowerWebpackPlugin({
 						includes: /\.jsx?$/
-					})
+					}),
+	 				new webpack.ProvidePlugin({
+	 					'$': 'jquery',
+	 					'jQuery': 'jquery',
+	 					'window.jQuery': 'jquery',	 								
+	 				}),					
 				],
 				eslint: {
 					emitError: true,

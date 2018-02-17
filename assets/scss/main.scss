@@ -57,7 +57,8 @@
 @import "vendor/polyfill.object-fit";
 @import "vendor/moz-backround-picture";
 @import "vendor/utility-classes";
-
+@import "vendor/flexboxgrid";
+@import "vendor/izimodal";
 
 
 /**
@@ -65,3 +66,5 @@
  */
 @import "elements/site";
 @import "elements/hero";
+@import "elements/slick";
+@import "elements/slick-theme";
