@@ -28,14 +28,14 @@
 
 				<a class="hero__cta"
 				   target="_blank"
-				   href="https://github.com/MozaikAgency/wp-theme-starter">
+				   href="https://github.com/ryska-design/wp-theme-starter">
 					check out the README
 				</a>
 
 				<?php get_template_part( 'elements/github' ); ?>
 
 				<div class="hero__icon">
-					<?php MOZ_SVG::svg( 'medal' ); ?>
+					<?php MOZ_SVG::svg( 'logo' ); ?>
 				</div>
 
 				<div class="hero__credits">

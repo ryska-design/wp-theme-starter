@@ -52,9 +52,7 @@ if ( ! function_exists( 'theme_setup' ) ) {
 
 
 		// Let wp know we want to use post thumbnails
-		/*
 		add_theme_support( 'post-thumbnails' );
-		*/
 		
 		// Add Custom Logo Support.
 		/*
@@ -187,3 +185,86 @@ if ( ! function_exists( 'theme_scripts_localize' ) ) {
 		) );
 	}
 }
+
+
+
+/* =========================================
+		Allow SVG downloading
+   ========================================= */
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+
+/* =========================================
+		WIDGETS
+   ========================================= */
+/**
+ * Register Search widget
+ *
+ */
+function search_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Search',
+		'id'            => 'search',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
+
+}
+add_action( 'widgets_init', 'search_widgets_init' );
+
+
+
+/**
+ * Register Social widget
+ *
+ */
+function social_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Social',
+		'id'            => 'social',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
+
+}
+add_action( 'widgets_init', 'social_widgets_init' );
+
+/**
+ * Register Nav widget
+ *
+ */
+function nav_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Nav',
+		'id'            => 'nav',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
+
+}
+add_action( 'widgets_init', 'nav_widgets_init' );
+
+
+
+/**
+ * Register Language widget
+ *
+ */
+function language_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Language',
+		'id'            => 'language',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
+
+}
+add_action( 'widgets_init', 'language_widgets_init' );

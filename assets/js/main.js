@@ -10,6 +10,8 @@ import './vendor/webpack.publicPath';
  * Your theme's js starts
  * here...
  */
+import './scripts/preloader';
+import './scripts/auto-hide-header';
 
 // silly example:
 import obj from './scripts/example';

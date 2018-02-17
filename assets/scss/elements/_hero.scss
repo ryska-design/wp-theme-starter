@@ -1,13 +1,14 @@
-/* =========================================
-		Hero
-   ========================================= */
+/*
+ * Hero
+ * 
+ */
 
 .hero {
 	position: relative;
 	z-index: 1;
 	min-height: 100%;
 
-	background: top center no-repeat url($p_images + 'everest.jpg');
+	background: top center no-repeat url($p_images + 'about.jpg');
 	background-size: cover;
 
 	&:after {

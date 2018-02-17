@@ -8,3 +8,32 @@
 	padding: 0;
 	height: 100%;
 }
+
+.site__header{
+	z-index:99988;
+	display:block;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:90px;
+	background: $c_black;
+
+	.site__header__nav{
+		position:absolute;
+		top:0px;
+		right:5vw;
+	}
+}
+.site__logo{
+	display:block;
+	position:fixed;
+	top:0px;
+	left:5vw;
+	top:15px;
+	height:50px;
+
+	img, svg{
+		height:100%;
+	}	
+}

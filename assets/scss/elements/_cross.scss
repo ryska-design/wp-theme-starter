@@ -1,0 +1,67 @@
+$c_main: $color-primary;
+$c_bg: $c_white; 
+
+.cross{
+	display:inline-block;
+	width:50px;
+	height:50px;
+
+	span{
+		position: relative;
+		display: block;
+		width:100%;
+		height:100%;
+		cursor: pointer;
+
+		&::before, &::after{
+			content: '';
+			display: block;
+			position:absolute;
+			top:22.5px;
+			left: 0px;
+			width:50px;
+			height: 3px;
+			background:$c_main;
+			transition: all 0.5s ease-out;
+		}
+		
+		&::before{
+			transform: rotate(-45deg);
+		}
+
+		&::after{
+			transform: rotate(45deg);
+		}
+
+		&:hover{
+			&::before{
+				transform: rotate(-135deg);
+			}
+
+			&::after{
+				transform: rotate(-45deg);
+			}			
+		}
+
+	}
+
+	&.small{
+		width:25px;
+		height:25px;
+		span{
+			&::before, &::after{
+				width:25px;
+				top:11.25px;
+				height: 2.5px;			
+			}
+		}
+	}
+	&.white{
+		span{
+			&::before,&::after{
+				background:$c_bg; 
+			}	
+		}	
+	}
+}
+

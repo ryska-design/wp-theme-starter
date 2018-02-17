@@ -16,11 +16,15 @@
 
 $c_black: #000;
 
+$c_gray: #666;
+
 $c_white: #fff;
 
 $c_red: #f00;
 
 $c_green: #0f0;
+
+$color_primary: lighten($c_black, 10%);
 
 
 /* =========================================

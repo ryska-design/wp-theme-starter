@@ -29,6 +29,10 @@
 <body class="site__body">
 <?php // <body> closes in footer.php ?>
 
+<?php // Include preloader ?>
+<?php get_template_part( 'elements/page-preloader' ); ?>
 
+<?php // Include navigation ?>
+<?php get_template_part( 'elements/nav' ); ?>
 
 <?php // common header content goes here ?>
