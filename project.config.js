@@ -20,12 +20,12 @@
  * }
  */
 module.exports = {
-	name: 'you_should_probably_change_this',
-	prettyName: 'You should probably change this...',
+	name: 'ryska',
+	prettyName: 'Ryska demo',
 
-	description: 'The 2015 theme for {Example.com}. Built by John & Jane Doe for {Example}',
+	description: 'The 2018 theme for {Ryska.com.ua}. Built by Ihor Nastenko for RYSKA DESIGN',
 	version: '0.1.0',
-	author: 'John & Jane Doe <jd@example.com>',
-	authorURI: 'http://example.com',
+	author: 'Ihor Nastenko <web.ryska@gmail.com>',
+	authorURI: 'http://my.unique.in.ua',
 	license: 'GPLv2 or later'
 };
