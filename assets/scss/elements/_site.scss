@@ -23,8 +23,73 @@
 		position:absolute;
 		top:0px;
 		right:5vw;
+
+		.site__header__btn{
+			display:inline-block;
+			width:90px;
+			height:90px;
+			.bar{
+				margin: 35px auto;
+			}
+		}
 	}
 }
+
+.site__nav{
+
+	.nav, .menu{
+		display:block;
+		position:absolute;;
+		top:50%;
+		left:50%;
+		margin:0px;
+		transform:translate(-50%, -50%);		
+		li{
+			display:block;
+			position:relative;
+			list-style-type:none;
+			margin: 20px 0px;
+			padding:0px 20px; 
+			a{
+				position:relative;
+				z-index:5;
+				display:block;
+				color:$c_white;
+				font-size:48px;
+				line-height:60px;
+				text-decoration:none;
+				outline:none;
+				transition:all 0.5s ease;
+			}
+
+			&:after{
+				z-index:1;
+				position:absolute;
+				content: '';
+				display:block;
+				top:0px;
+				left:0px;
+				width:0px;
+				height:100%;
+				background:$c_white;
+				transition:all 0.5s ease;
+			}
+
+			&:hover{
+				a{
+					color:$c_black;
+				}
+				&:after{
+
+					width:100%;
+				}				
+			}
+		}
+	}
+
+
+}
+
 .site__logo{
 	display:block;
 	position:fixed;

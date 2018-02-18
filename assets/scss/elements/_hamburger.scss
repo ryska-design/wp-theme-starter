@@ -6,11 +6,12 @@ $bar-2: 40px;
 $bar-3: 40px;
 $bar-height: 4px;
 $bar-spacing: 8px;
-$bar-color: $color-primary;
+$bar-color: #fff;
 $bar-bg-color: rgba(255, 255, 255, 0);
-$bar-color-anm: $color-primary;
+$bar-color-anm: #fff;
 $bar-bg-color-anm: rgba(255, 255, 255, 0);
-$bar-animate-bg: $c_gray;
+$bar-animate-bg: #aaa;
+$bar-border-radius: 0px;
 
 .bar,
 .bar:after,
@@ -28,7 +29,7 @@ $bar-animate-bg: $c_gray;
 .bar {
 	position: relative;
 	transform: translateY($bar-spacing);
-	border-radius: 10px;
+	border-radius: $bar-border-radius;
 	transition: all 300ms ease-in;
 	background: $bar-color;
 
@@ -38,7 +39,7 @@ $bar-animate-bg: $c_gray;
 		left: 0;
 		bottom: $bar-spacing;
 		background: $bar-color;
-		border-radius: 10px;
+		border-radius: $bar-border-radius;
 		transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), background 300ms ease-in;
 	}
 
@@ -48,7 +49,7 @@ $bar-animate-bg: $c_gray;
 		left: 0;
 		top: $bar-spacing;
 		background: $bar-color;
-		border-radius: 10px;
+		border-radius: $bar-border-radius;
 		transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), background 300ms ease-in;			
 	}
 

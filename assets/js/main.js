@@ -12,6 +12,7 @@ import './vendor/webpack.publicPath';
  */
 import './scripts/preloader';
 import './scripts/auto-hide-header';
+import './scripts/modal';
 
 // silly example:
 import obj from './scripts/example';
