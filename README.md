@@ -1,6 +1,7 @@
-# The Mozaik WordPress Theme Boilerplate
+# Ryska WordPress Theme Boilerplate
 
 This is a WordPress theme starter-kit meant to offer a first-class developer experience.
+It is based on The Mozaik WordPress Theme Boilerplate/
 
 ## Contents
 
@@ -41,7 +42,7 @@ This is a WordPress theme starter-kit meant to offer a first-class developer exp
 		- [x] SVG optimization via svgmin
 	- [x] Build process easily extendable
 - [x] NPM and Bower workflows supported
-- [x] Theme Helpers Library (For more details check out the [library's README](https://github.com/MozaikAgency/wp-theme-starter/tree/master/theme/library))
+- [x] Theme Helpers Library (For more details check out the [library's README](https://github.com/ryska-design/wp-theme-starter/tree/master/theme/library))
 	- [x] Responsive images specification implementation
 		- [x] Helper function to print WordPress media by attachment id using responsive background images,
 		      the picture element or img-srcset-sizes
@@ -125,7 +126,7 @@ Thanks to [Ryanlanciaux](http://ryanlanciaux.github.io/blog/2014/08/02/using-jes
 1. Optional stuff:
 	- use `npm install --save <module(s)>` or `bower install --save <module(s)>` to easily manage js dependencies, then use `var <module> = require('<module>');`
 	  or `import <module> from '<module>';` anywhere in your js files you want to use them
-	- explore the [`/library` directory](https://github.com/MozaikAgency/wp-theme-starter/tree/master/theme/library) in the dev theme for anything useful to your project.
+	- explore the [`/library` directory](https://github.com/ryska-design/wp-theme-starter/tree/master/theme/library) in the dev theme for anything useful to your project.
 
 ### Production
 
