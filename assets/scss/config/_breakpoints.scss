@@ -21,3 +21,22 @@ $b_tablet:  '(min-width: 600px)';
 $b_laptop:  '(min-width: 800px)';
 
 $b_desktop: '(min-width: 1024px)';
+
+/* ----- sm  -----  md  -----  lg  ----- xlg ----- */
+/* ----- 768 ----- 1024 ----- 1248 ----- 1440 ----- */
+$xs:  '(max-width: 47.9rem)';
+$sm:  '(min-width: 48rem) and (max-width: 63.9rem)';
+$md:  '(min-width: 64rem) and (max-width: 77.9rem)';
+$lg:  '(min-width: 78rem) and (max-width: 89.9rem)';
+$xlg: '(min-width: 90rem)';
+
+$xs_min:  '(min-width: 30rem)';
+$sm_min:  '(min-width: 48rem)';
+$md_min:  '(min-width: 64rem)';
+$lg_min:  '(min-width: 78rem)';
+
+$xs_max:  '(max-width: 29.9rem)';
+$sm_max:  '(max-width: 47.9rem)';
+$md_max:  '(max-width: 63.9rem)';
+$lg_max:  '(max-width: 77.9rem)';
+$xlg_max: '(max-width: 89.9rem)';

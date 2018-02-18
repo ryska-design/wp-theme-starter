@@ -9,46 +9,33 @@
 
 	<article class="hero">
 		<div class="hero__content">
+			<h1 class="hero__title">RYSKA</h1>
+			<div class="hero__text">
+				WordPress</br>Theme Starter
+			</div>
+			<a class="btn _white"
+			   target="_blank"
+			   href="https://github.com/ryska-design/wp-theme-starter">
+				The README
+			</a>
+		</div>
+	</article>
 
-			<header>
-				<h1 class="hero__title">
-					The Mozaik WordPress Theme Starter
-				</h1>
-			</header>
-
-			<p>
-				Build tools included! :)
-			</p>
-
-			<p>
-				<strong>Happy Hacking!</strong>
-			</p>
-
-			<footer>
-
-				<a class="hero__cta"
-				   target="_blank"
-				   href="https://github.com/ryska-design/wp-theme-starter">
-					check out the README
-				</a>
-
-				<?php get_template_part( 'elements/github' ); ?>
-
-				<div class="hero__icon">
-					<?php MOZ_SVG::svg( 'logo' ); ?>
+	<article class="site__grid">
+		<div class="container">
+			<div class="row">
+				<?php for( $i=0; $i<12; $i++ ): ?>
+				<div class="site__grid__col col-xs-12 col-md-6 col-lg-4">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/about.jpg" >
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in justo et mi dictum consequat eget sed dolor. Proin ut lacus vel dui placerat aliquam. Etiam sed eleifend massa. Nunc id efficitur ligula. Nullam et arcu euismod, blandit orci at, aliquet arcu. Duis quis dapibus purus, sit amet semper nisl. Sed ac cursus lacus, tincidunt tincidunt libero.</p>
+					<a class="btn _white"
+					   target="_blank"
+					   href="https://github.com/ryska-design/wp-theme-starter">
+						The README
+					</a>					
 				</div>
-
-				<div class="hero__credits">
-					<p>
-						Background image of Everest courtesy of <a target="_blank" href="https://unsplash.it/">Unsplash It.</a>
-					</p>
-					<p>
-						SVG medal created by Creative Stall, from the <a target="_blank" href="https://thenounproject.com/creativestall/">Noun Project.</a>
-					</p>
-				</div>
-
-			</footer>
-
+				<?php endfor; ?> 
+			</div>
 		</div>
 	</article>
 
